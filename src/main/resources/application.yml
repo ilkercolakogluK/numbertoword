@@ -1,0 +1,31 @@
+######### DEFAULT #########
+
+server:
+  port: 8061
+  servlet:
+    context-path: /nwc
+  error:
+    whitelabel:
+      enabled: false
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  output:
+    ansi:
+      enabled: always
+  jmx:
+    enabled: false
+
+logging:
+  level:
+    # org.springframework: DEBUG
+    org.springframework.web: DEBUG
+
+    io:
+      swagger:
+        models:
+          parameters:
+            AbstractSerializableParameter: ERROR
